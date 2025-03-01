@@ -1,5 +1,6 @@
 x = input()
 
+
 up = 0
 
 down = 0

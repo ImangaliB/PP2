@@ -1,6 +1,5 @@
 import os
 
-
 path = r"C:\Users\Imosh\Desktop\PP2\Lab_6\dir and files\example.txt"
 
 if os.path.exists(path):

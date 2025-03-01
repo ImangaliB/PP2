@@ -5,6 +5,7 @@ with open(r"C:\Users\Imosh\Desktop\PP2\lab_4\json\sample-data.json") as f:
    data = json.load(f)
 
 
+
 imdata = data.get('imdata', [])
 print("Interface Status")
 print("=" * 80)

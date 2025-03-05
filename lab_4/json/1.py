@@ -1,7 +1,7 @@
 import json
 
 
-with open(r"C:\Users\Arman\Desktop\PP2\Lab 4\json\sample-data.json") as f:
+with open(r"C:\Users\Imosh\Desktop\PP2\lab_4\json\sample-data.json") as f:
    data = json.load(f)
 
 

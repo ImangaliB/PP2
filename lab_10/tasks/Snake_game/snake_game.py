@@ -26,16 +26,16 @@ game_over = font.render("Game Over", True,color.colorGREEN)
 
 
 
-game_over_sound = pygame.mixer.Sound("C:\Users\Imosh\Desktop\PP2\lab_8\Ace of Base - Happy Nation.mp3")
+
 
 apple_images = [
-    "C:\Users\Imosh\Desktop\PP2\lab_10\apple.png",
-    "C:\Users\Imosh\Desktop\PP2\lab_10\apple.png",
-    "C:\Users\Imosh\Desktop\PP2\lab_10\apple.png",
-    "C:\Users\Imosh\Desktop\PP2\lab_10\apple.png",
-    "C:\Users\Imosh\Desktop\PP2\lab_10\apple_2.png",
-    "C:\Users\Imosh\Desktop\PP2\lab_10\apple_3.png",
-    "C:\Users\Imosh\Desktop\PP2\lab_10\apple_4.png"
+    r"C:\Users\Imosh\Desktop\PP2\lab_10\apple.jpg",
+    r"C:\Users\Imosh\Desktop\PP2\lab_10\apple.jpg",
+    r"C:\Users\Imosh\Desktop\PP2\lab_10\apple.jpg",
+    r"C:\Users\Imosh\Desktop\PP2\lab_10\apple.jpg",
+    r"C:\Users\Imosh\Desktop\PP2\lab_10\apple_2.jpg",
+    r"C:\Users\Imosh\Desktop\PP2\lab_10\apple_3.jpg",
+    r"C:\Users\Imosh\Desktop\PP2\lab_10\apple_4.jpg"
 ]
 current_index = 0
 
@@ -237,7 +237,7 @@ while running:
         screen.fill(color.colorBLACK)
         screen.blit(game_over,(260,220))
 
-        game_over_sound.play()
+        
         time.sleep(1)
         screen.blit(font.render(f"Your score is: {SCORE}",True,color.colorGRAY),(190,290))
         pygame.display.update()

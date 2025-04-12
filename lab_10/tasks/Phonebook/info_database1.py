@@ -8,7 +8,7 @@ def open_database():
     conn1 = psycopg2.connect(
     dbname="phonebook_db",
     user="postgres",
-    password="1234",
+    password="Imosh_07",
     host="localhost",
     port="5432"
     )

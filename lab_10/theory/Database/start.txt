@@ -1,0 +1,63 @@
+1)Create Table:
+
+CREATE TABLE cars (
+  brand VARCHAR(255),
+  model VARCHAR(255),
+  year INT
+);
+
+2)Insert into :
+INSERT INTO cars (brand, model, year)
+VALUES ('Ford', 'Mustang', 1964);
+
+3)Select Data:
+
+SELECT brand, year FROM cars;
+
+SELECT * FROM cars;
+
+
+4)The ALTER TABLE Statement
+###The ALTER TABLE statement is used to add, delete, or modify columns in an existing table.
+
+    ADD COLUMN(We want to add a column named color to our cars table.):
+    ALTER TABLE cars
+    ADD color VARCHAR(255);
+
+    ALTER COLUMN:
+    (We want to change the data type of the year column of the cars table from INT to VARCHAR(4).)
+    ALTER TABLE cars
+    ALTER COLUMN year TYPE VARCHAR(4);
+
+    DROP COLUMN:
+    (We want to remove the column named color from the cars table.)
+    ALTER TABLE cars
+    DROP COLUMN color;
+
+    The DELETE Statement:
+    (To delete the record(s) where brand is 'Volvo', use this statement:)
+    DELETE FROM cars
+    WHERE brand = 'Volvo';
+    (Delete All Records)
+    DELETE FROM cars;
+
+
+5)The UPDATE Statement
+###The UPDATE statement is used to modify the value(s) in existing records in a table.
+
+UPDATE cars
+SET color = 'red'
+WHERE brand = 'Volvo';
+
+(Without the WHERE clause, ALL records will be updated:)
+    UPDATE cars
+    SET color = 'red';
+    (Result)
+    UPDATE 4
+
+
+6)The DROP TABLE Statement
+###Delete the cars table:
+
+  DROP TABLE cars;
+

@@ -4,7 +4,7 @@ import re
 conn = psycopg2.connect(
     dbname="suppliers1",
     user="postgres",
-    password="Nuric123",
+    password="Imosh_07",
     host="localhost",
     port="5432"
 )
